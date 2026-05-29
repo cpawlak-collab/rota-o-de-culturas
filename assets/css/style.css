@@ -1,0 +1,161 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f4;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1b4d3e;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid #8db600;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #1b4d3e;
+    margin-bottom: 1rem;
+    border-left: 4px solid #8db600;
+    padding-left: 0.5rem;
+}
+
+.botoes-cultura {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.btn {
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.9);
+}
+
+.btn-soja { background-color: #d4a373; color: #3d2314; }
+.btn-milho { background-color: #ffb703; color: #212529; }
+.btn-pastagem { background-color: #2a9d8f; }
+
+.btn-reset {
+    background: none;
+    border: 1px solid #c93b2b;
+    color: #c93b2b;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-reset:hover { background: #fff5f5; }
+
+.historico {
+    background: #f8f9fa;
+    padding: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.cards-indicadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #f9fbf9;
+    border: 1px solid #e2ece2;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1b4d3e;
+}
+
+.barra-progresso {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    height: 12px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+}
+
+.progresso {
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+.verde { background-color: #2a9d8f; }
+.amarelo { background-color: #ffb703; }
+.vermelho { background-color: #e63946; }
+
+.feedback {
+    padding: 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.info { background-color: #e8f4f8; border-left: 5px solid #2b8aab; color: #1d5b73; }
+.sucesso { background-color: #eafaf1; border-left: 5px solid #2a9d8f; color: #1c665e; }
+.alerta { background-color: #fff9e6; border-left: 5px solid #ffb703; color: #805b00; }
+.perigo { background-color: #fdf2f2; border-left: 5px solid #e63946; color: #912029; }
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: #777;
+    font-size: 0.85rem;
+}
