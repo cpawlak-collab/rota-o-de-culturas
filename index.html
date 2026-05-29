@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Agrinho: Rotação de Culturas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌾 Simulador de Rotação de Culturas</h1>
+            <p>Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="painel-controle">
+            <h2>Escolha o Próximo Plantio</h2>
+            <p>Selecione uma cultura para a próxima safra e veja o impacto ecológico e econômico no seu solo.</p>
+            
+            <div class="botoes-cultura">
+                <button onclick="simular('soja')" class="btn btn-soja">🌱 Plantar Soja</button>
+                <button onclick="simular('milho')" class="btn btn-milho">🌽 Plantar Milho</button>
+                <button onclick="simular('pastagem')" class="btn btn-pastagem">🌿 Plantar Pastagem (Braquiária)</button>
+            </div>
+            
+            <button onclick="resetarSimulador()" class="btn-reset">🔄 Reiniciar Solo</button>
+        </section>
+
+        <section class="status-solo">
+            <h2>Status Atual da Propriedade</h2>
+            <div class="historico">
+                <strong>Histórico de Safras:</strong> <span id="lista-historico">Nenhuma plantação ainda</span>
+            </div>
+            
+            <div class="cards-indicadores">
+                <div class="card">
+                    <h3>Saúde do Solo</h3>
+                    <div class="barra-progresso"><div id="barra-saude" class="progresso verde" style="width: 100%;"></div></div>
+                    <p><span id="txt-saude">100</span>%</p>
+                </div>
+                <div class="card">
+                    <h3>Risco de Pragas</h3>
+                    <div class="barra-progresso"><div id="barra-pragas" class="progresso verde" style="width: 0%;"></div></div>
+                    <p><span id="txt-pragas">0</span>%</p>
+                </div>
+                <div class="card">
+                    <h3>Gastos com Insumos</h3>
+                    <p>R$ <span id="txt-gastos">0</span> / ha</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="alerta-feedback" class="feedback info">
+            <strong>Dica do Agrinho:</strong> Comece escolhendo a sua primeira cultura para entender como o manejo planejado protege a terra!
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto Desenvolvido para o Concurso Agrinho 2026 • Tecnologia a serviço do campo sustentável.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
